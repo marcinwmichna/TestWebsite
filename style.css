@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Sen:wght@400&display=swap");
+:root {
+  --logo-color: #263396;
+  --main-blue-font-color: #1c2085;
+  --input-gray-font-color: #576677;
+  --footer-font-color: #45515f;
+  --main-button-blue-color: #38a5db;
+  --second-button-blue-color: #63c7ff;
+  --white: #ffffff;
+  --team-color: #1c1f83;
+  --dimmed-title-color: #011226;
+  --dimmer-title-description-color: #45515f;
+  --concact-section-background: #252b42;
+  --contact-form-background: #4250bf;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* margin: 0; */
+  font-family: "Sen", sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+h2 {
+  font-weight: 400;
+}
+body {
+  margin: 0;
+  font-weight: 400;
+}
+.wrapper {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.social {
+  position: fixed;
+  /* top: 500px; */
+  top: 43vh;
+  top: 43vh;
+  right: 5vw;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+.social__btn {
+  padding: 0.5rem;
+  background-color: var(--second-button-blue-color);
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 0.6rem;
+  position: relative;
+}
+.social__btn__img {
+  position: absolute;
+}
+.social__btn__twitter {
+  top: 9px;
+}
+.social__btn__facebook {
+  left: 11px;
+  top: 6px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.sticky {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  margin: auto;
+  overflow: hidden;
+  width: 100%;
+  background-color: var(--white);
+
+  /* width: 90vw; */
+}
+
+.nav__logo {
+  padding: 0.6rem 0;
+}
+
+.nav__btns ul {
+  list-style: none;
+  display: flex;
+}
+.nav__btns ul li {
+  color: var(--main-blue-font-color);
+  padding: 0.35rem 0.5rem;
+  line-height: 19.25px;
+}
+
+.nav__btn--active {
+  border-bottom: 2px solid #5454d4;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  background-image: url("./assets/BG/hero__background.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  margin-bottom: 11rem;
+  /* z-index: -1; */
+  /* padding-bottom: 30vw; */
+}
+
+.hero__introduction {
+  padding-bottom: 5rem;
+}
+.hero__text {
+  font-size: 1.5rem;
+  color: var(--white);
+  letter-spacing: 0.2px;
+  line-height: 32px;
+  font-family: Sen;
+  font-style: normal;
+  font-weight: 700;
+  margin: 8rem 0 3.5rem 0;
+}
+.hero__form {
+  margin-bottom: 3rem;
+}
+.hero__form__label {
+  font-size: 0.9rem;
+  color: var(--white);
+  opacity: 0.7;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.form__input {
+  font-size: 17px;
+  padding: 0.8rem 1.3rem;
+  border-radius: 30px;
+  width: 100%;
+  margin: 0.5rem 0;
+  border: none;
+}
+.hero__form__input:focus {
+  outline: none;
+}
+.hero__form__text {
+  color: var(--input-gray-font-color);
+}
+
+.hero__form__btn {
+  color: var(--white);
+  background-color: var(--main-button-blue-color);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+.hero__arrow {
+  position: relative;
+}
+.hero__arrow {
+  margin: auto;
+  width: max-content;
+}
+.hero__arrow__img {
+  padding: 0.4rem;
+  border: 1px solid rgba(231, 231, 231, 0.3);
+  border-radius: 50px;
+}
+
+.hero__video {
+  /* width: 25px; */
+}
+.hero__video__controls {
+  width: 90vw;
+  border-radius: 7px;
+}
+
+.team__title {
+  letter-spacing: 12px;
+  margin: auto;
+  color: var(--team-color);
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+
+.team__people {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  overflow-x: auto;
+  /* overflow: auto; */
+  /* white-space: nowrap; */
+}
+
+.team__person {
+  /* width: 1000px; */
+  width: 400px;
+  padding: 0.5rem;
+  max-width: 200px;
+}
+
+.team__person__block {
+  width: fit-content;
+  margin: 0.7rem auto;
+  text-align: center;
+  font-weight: 400;
+}
+.team__person__title {
+  color: var(--main-button-blue-color);
+  white-space: nowrap;
+}
+.team__person__position {
+  color: var(--dimmed-title-color);
+  opacity: 0.5;
+  font-size: 13px;
+  letter-spacing: 0.26px;
+}
+.team__person__description {
+  color: var(--dimmer-title-description-color);
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  /* white-space: normal; */
+}
+.team__person__social {
+  color: white;
+}
+.team__person__social__img {
+  padding: 0.3rem 1rem;
+  border: 1px solid rgba(127, 139, 152, 0.3);
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.contact {
+  background-color: var(--concact-section-background);
+}
+
+.contact__description {
+  text-align: center;
+  color: var(--white);
+}
+
+.contact__description__title {
+  letter-spacing: 12px;
+  font-weight: 400;
+}
+.contact__description__text {
+  font-weight: 400;
+  font-size: 14px;
+}
+.contact__wrapper {
+  padding: 4rem 0;
+}
+
+.contact__form {
+  background-color: var(--contact-form-background);
+  padding: 1.2rem;
+}
+
+.form__checkbox {
+  padding: 0.2rem;
+}
