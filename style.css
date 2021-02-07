@@ -620,7 +620,7 @@ body {
   }
   .contact__form {
     width: 30vw;
-    max-width: 600px;
+    max-width: 450px;
   }
   .footer__wrapper {
     margin: auto;
@@ -628,5 +628,6 @@ body {
   }
   .contact__description__text {
     width: 25vw;
+    max-width: 350px;
   }
 }
