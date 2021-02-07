@@ -515,7 +515,7 @@ body {
     line-height: 24px;
   }
   .contact__description__text {
-    width: 50vw;
+    width: 40vw;
     margin: 1rem auto 3rem auto;
     font-size: 18px;
     line-height: 24px;
@@ -625,5 +625,8 @@ body {
   .footer__wrapper {
     margin: auto;
     width: 50vw;
+  }
+  .contact__description__text {
+    width: 25vw;
   }
 }
