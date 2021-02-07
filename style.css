@@ -622,4 +622,8 @@ body {
     width: 30vw;
     max-width: 600px;
   }
+  .footer__wrapper {
+    margin: auto;
+    width: 50vw;
+  }
 }
