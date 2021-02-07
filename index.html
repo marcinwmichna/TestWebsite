@@ -33,14 +33,20 @@
       </a>
     </div>
 
-    <nav class="sticky">
-      <div class="wrapper nav">
-        <img class="nav__logo" src="./assets/logo.svg" alt="" />
+    <nav id="navID" class="sticky">
+      <div class="wrapper nav wrapper__tablet">
+        <a class="nav__logo" href="#hero">
+          <img src="./assets/logo.svg" alt="" />
+        </a>
         <div class="nav__btns">
           <ul>
-            <li class="nav__btn--active">ICO</li>
-            <li>Team</li>
-            <li>Contact</li>
+            <li class="nav__btn nav__btn--active">
+              <a href="#hero"> ICO </a>
+            </li>
+            <li class="nav__btn">
+              <a href="#team"> Team </a>
+            </li>
+            <li class="nav__btn"><a href="#contact"> Contact </a></li>
           </ul>
         </div>
       </div>
@@ -48,26 +54,38 @@
     <section id="hero" class="hero">
       <div class="wrapper">
         <div class="hero__introduction">
-          <h1 class="hero__text">
-            The first fully-automatic social crypto trading platform with real
-            crypto currency
-          </h1>
-          <form action="#" class="hero__form">
-            <label for="email" class="hero__form__label"
-              >Subscribe and get the lastes information</label
-            >
-            <input
-              type="text"
-              id="email"
-              placeholder="Enter your email"
-              class="form__input hero__form__text"
-            />
-            <input
-              type="submit"
-              value="Subscribe"
-              class="form__input hero__form__btn"
-            />
-          </form>
+          <div class="hero__block">
+            <div class="hero__block__left">
+              <h1 class="hero__text">
+                The first fully-automatic social crypto trading platform with
+                real crypto currency
+              </h1>
+
+              <form action="#" class="hero__form">
+                <label for="email" class="hero__form__label"
+                  >Subscribe and get the lastes information</label
+                >
+                <div class="hero__form__inputs">
+                  <input
+                    type="text"
+                    id="email"
+                    placeholder="Enter your email"
+                    class="form__input hero__form__text"
+                  />
+                  <input
+                    type="submit"
+                    value="Subscribe"
+                    class="form__input form__btn hero__form__btn"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="hero__block__right">
+              <video class="hero__video__controls" controls width="250">
+                <source src="./assets/ocean_video.mov" />
+              </video>
+            </div>
+          </div>
           <div class="hero__arrow">
             <div class="hero__arrow">
               <a href="#team">
@@ -90,7 +108,7 @@
     <section class="team" id="team">
       <div class="wrapper">
         <div class="team__title">
-          <h2 class="">TEAM</h2>
+          <h2 class="team__title__text">TEAM</h2>
         </div>
         <div class="team__people">
           <div class="team__person">
@@ -209,6 +227,10 @@
             </div>
           </div>
         </div>
+        <div class="team__scroll">
+          <div class="team__scroll__dot team__scroll__dot--active"></div>
+          <div class="team__scroll__dot"></div>
+        </div>
       </div>
     </section>
     <section class="contact" id="contact">
@@ -224,32 +246,74 @@
           <form action="#">
             <label class="contact__form__label" for="name"></label>
             <input
-              class="form__input"
+              class="form__input contact__form__input"
               type="text"
               id="name"
               placeholder="Your Name"
             />
             <label class="contact__form__label" for="email"></label>
             <input
-              class="form__input"
+              class="form__input contact__form__input"
               type="text"
               id="email"
               placeholder="Your Email"
             />
-            <input class="form__checkbox" type="checkbox" />
-            <label for="checkbox">Checkbox</label>
-            <input type="submit" value="Send" />
+            <div class="form__input__checkbox__block">
+              <input
+                class="form__checkbox contact__form__input"
+                type="checkbox"
+              />
+              <span class="form__checkbox_text" for="checkbox">Checkbox</span>
+            </div>
+            <input
+              class="form__input form__btn form__contact__submit"
+              type="submit"
+              value="Send"
+            />
           </form>
         </div>
       </div>
     </section>
-    <footer>
-      <img src="./assets/logo.svg" alt="" />
-      <div>
-        <span>Contact us:</span>
-        <span>have@nicecoding.io</span>
+    <footer id="footer" class="footer">
+      <div class="wrapper footer_wrapper wrapper__tablet">
+        <div class="footer__logo">
+          <a href="#hero">
+            <img class="footer__logo__image" src="./assets/logo.svg" alt="" />
+          </a>
+        </div>
+        <div>
+          <h2 class="footer__contanct">Contact us:</h2>
+          <a
+            href="mailto:have@nicecoding.io"
+            class="footer__contanct footer__mail"
+            >have@nicecoding.io</a
+          >
+        </div>
+        <div class="form__contact__submit form__btn form__input footer__submit">
+          <a href="#">Read Whitepaper</a>
+        </div>
       </div>
-      <a href="#">Read Whitepaper</a>
+      <div class="footer__wrapper__background">
+        <div class="wrapper">
+          <div class="footer__wrapper">
+            <h3 class="footer__info">
+              <a href="#"> © Copywriters 2020 </a>
+            </h3>
+            <p>|</p>
+            <h3 class="footer__info">
+              <a href="#"> FAQ </a>
+            </h3>
+            <p>|</p>
+            <h3 class="footer__info">
+              <a href="#"> Terms of Use </a>
+            </h3>
+            <p>|</p>
+            <h3 class="footer__info">
+              <a href="#"> Privacy Policy </a>
+            </h3>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="main.js"></script>
   </body>
