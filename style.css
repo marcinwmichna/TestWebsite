@@ -401,6 +401,16 @@ body {
   height: 24px;
   border-radius: 5px;
 }
+.form__checkbox--active::before {
+  content: "";
+  display: inline-block;
+  background-image: url("./assets/checkbox_ok.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+}
 
 .form__input__checkbox__block {
   position: relative;

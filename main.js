@@ -19,9 +19,16 @@ contact.addEventListener("click", ()=>{
 })
 
 
-
-
-
+//checkbox
+let checkbox = document.getElementById("checkbox");
+checkbox.addEventListener("click",()=>{
+    if(checkbox.classList.contains("form__checkbox--active")){
+        checkbox.classList.remove("form__checkbox--active")
+    }
+    else{
+        checkbox.classList.add("form__checkbox--active")
+    }
+})
 
 
 //Team
