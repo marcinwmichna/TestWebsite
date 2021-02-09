@@ -19,7 +19,6 @@
 ::before,
 ::after {
   box-sizing: border-box;
-  /* margin: 0; */
   font-family: "Sen", sans-serif;
   font-size: 16px;
   scroll-behavior: smooth;
@@ -30,7 +29,6 @@ h2 {
 body {
   margin: 0;
   font-weight: 400;
-  /* background-color: var(--white); */
 }
 .wrapper {
   width: 90vw;
@@ -39,12 +37,10 @@ body {
 
 .social {
   position: fixed;
-  /* top: 500px; */
   top: 69vh;
   right: 5vw;
   display: flex;
   flex-direction: column;
-  /* z-index: 1; */
 }
 .social__btn {
   padding: 0.5rem;
@@ -67,7 +63,6 @@ body {
 }
 .modal {
   display: none;
-  /* background-color: #252b42; */
 }
 .modal__background--active {
   background-color: rgba(0, 0, 0, 0.35);
@@ -120,9 +115,6 @@ body {
   padding-top: 5rem;
   font-size: 1.5rem;
   color: var(--main-button-blue-color);
-
-  /* margin: initial auto; */
-  /* margin: auto; */
 }
 .modal__text {
   display: block;
@@ -131,8 +123,7 @@ body {
   line-height: 18px;
   color: var(--footer-font-color);
 }
-#modal__Edgar {
-}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -175,14 +166,11 @@ body {
 .hero {
   position: relative;
   display: flex;
-  /* background-image: url("./assets/BG/hero__background.svg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 700px;
   margin-bottom: 54vw;
-  /* z-index: -1; */
-  /* padding-bottom: 30vw; */
 }
 .background {
   overflow: visible !important;
@@ -241,7 +229,6 @@ body {
 .form__btn {
   color: var(--white);
   background-color: var(--main-button-blue-color);
-  /* font-family: "Open Sans", sans-serif; */
   cursor: pointer;
 
   font-weight: 400;
@@ -290,9 +277,6 @@ body {
   margin-bottom: 4rem;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  /* overflow: hidden; */
-  /* overflow: auto; */
-  /* white-space: nowrap; */
 }
 .team__people::-webkit-scrollbar {
   display: none;
@@ -330,7 +314,6 @@ body {
   font-size: 12px;
   line-height: 18px;
   text-align: center;
-  /* white-space: normal; */
 }
 .team__person__social {
   color: white;
@@ -350,12 +333,10 @@ body {
   margin-left: 42vw;
 }
 .team__scroll__dot {
-  /* align-content: center; */
   content: none;
   width: 20px;
 }
 .team__scroll__dot::before {
-  /* padding: 0.2rem; */
   content: "";
   position: absolute;
   width: 8px;
@@ -363,8 +344,6 @@ body {
   background-color: #c4c4c4;
   border-radius: 10px;
   top: -30px;
-  /* margin-left: 4vw; */
-  /* TODO margin */
 }
 .team__scroll__dot--active::before {
   background-color: var(--contact-form-background);
@@ -406,7 +385,7 @@ body {
 }
 
 .form__checkbox {
-  display: none;
+  /* display: none; */
   /* display: none; */
   /* border: 1px solid red; */
   /* border-radius: 50%; */
@@ -417,12 +396,10 @@ body {
 .form__checkbox::before {
   content: "";
   display: inline-block;
-  /* vertical-align: bottom; */
   background-color: var(--white);
   width: 24px;
   height: 24px;
   border-radius: 5px;
-  /* border-style: 1px solid gray; */
 }
 
 .form__input__checkbox__block {
@@ -431,7 +408,6 @@ body {
 .form__checkbox_text {
   color: var(--white);
   text-align: center;
-  /* justify-content: center; */
   align-content: center;
   height: 24px;
   position: absolute;
@@ -547,7 +523,6 @@ body {
   }
   .hero__form__btn {
     position: absolute;
-    /* left: 550px; */
     right: -1px;
     width: 9rem;
     padding: 0.8rem 2rem;
@@ -625,9 +600,7 @@ body {
   .footer_wrapper {
     display: flex;
     justify-content: space-between;
-    /* margin-top: 1rem; */
     padding-top: 1rem;
-    /* width: fit-content; */
   }
   .footer__logo {
     padding: 0;
@@ -668,9 +641,7 @@ body {
     max-width: 1550px;
   }
   .background {
-    /* max-height: 2600px; */
     max-height: 60vw;
-    /* background-position-y: -12vh; */
     background-position-y: bottom;
   }
   .social {
@@ -679,7 +650,6 @@ body {
   }
   .hero {
     background-position-y: 84%;
-    /* padding-bottom: 5rem; */
     margin-bottom: 0;
   }
   .hero__text {
@@ -734,9 +704,6 @@ body {
   .modal__text {
     max-height: 30vh;
     overflow-y: scroll;
-    /* scrollbar-width: thin; */
-    /* scrollbar-color: #2c3676 red; */
-    /* opacity: 0.4; */
     margin: 0 0.5rem 2.5rem 0;
   }
   .modal__text::-webkit-scrollbar-thumb {
