@@ -10,7 +10,13 @@
   <body>
     <div class="background"></div>
     <div id="modal" class="modal">
-      <div id="modal__video" class="modal__video"></div>
+      <div id="modal__video" class="modal__block">
+        <div class="modal__wrap">
+          <video id="video" class="modal__content" controls width="250">
+            <source src="./assets/ocean_video.mov" />
+          </video>
+        </div>
+      </div>
       <div id="modal__Edgar" class="modal modal__block">
         <div class="modal__wrap">
           <div class="modal__content">
@@ -431,7 +437,7 @@
             <div class="form__input__checkbox__block">
               <input
                 id="checkbox"
-                class="form__checkbox form__checkbox--active contact__form__input"
+                class="form__checkbox form__checkbox contact__form__input"
                 type="checkbox"
               />
               <span class="form__checkbox_text" for="checkbox">Checkbox</span>

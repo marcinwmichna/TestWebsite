@@ -61,6 +61,17 @@ body {
   left: 11px;
   top: 6px;
 }
+#modal__video {
+  display: none;
+}
+.modal__video--active {
+  display: initial;
+  overflow-y: auto;
+}
+#video {
+  margin: 0 auto;
+  width: 80vw;
+}
 .modal {
   display: none;
 }
@@ -76,7 +87,7 @@ body {
   overflow: auto;
 }
 .modal__content--active {
-  display: initial;
+  display: initial !important;
 }
 .closeBtn {
   margin: 1.5rem;
