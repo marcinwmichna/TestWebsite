@@ -3,28 +3,20 @@ let modalBackground = document.getElementById("modal")
 
 //video
 let video = document.querySelectorAll(".hero__video__controls");
-console.log(video);
 let theVideo = document.getElementById("modal__video");
 Array.from(video).forEach((el) => {
-    console.log(el)
     el.addEventListener("click",()=> {
         backgroundBlurOn();
-        // console.log(e.target)
         theVideo.classList.add("modal__content--active");
         modalBackground.addEventListener("click",(d)=>{
-            console.log("video",Date.now(), d.target.parentElement.parentElement)
             if(d.target==theVideo.firstElementChild){
                 theVideo.classList.remove("modal__content--active")
                 backgroundBlurOff();
             }
         })
     })
-    // console.log(el.target)
 
 })
-// video.addEventListener("click", (e)=>{
-//     theVideo.classList.add("modal__video--active");
-// })
 
 
 //Nav btns
@@ -76,7 +68,6 @@ edgar.addEventListener('click', () => {
 
     //background Click to exit
     modalBackground.addEventListener('click', (e)=>{
-        console.log(e.target)
         if (e.target== modalEdgar.firstElementChild){
 
             modalEdgar.classList.remove("modal__content--active");
